@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    ports:
+      - "5000:5000"
+    develop:
+      watch:
+        - action: sync
+          path: ./src
+          target: /app/src
+          ignore:
+            - node_modules/
+        - action: rebuild
+          path: package.json
