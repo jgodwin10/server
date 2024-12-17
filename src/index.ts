@@ -9,14 +9,14 @@ import helmet from "helmet";
 import { Server } from "socket.io";
 import http from "http";
 
-import authRoutes from "./src/Routes/authroutes";
-import postRoutes from "./src/Routes/postRoutes";
-import friendsRoutes from "./src/Routes/friendsRoutes";
-import profileRoutes from "./src/Routes/profileRoutes";
-import verificationRoutes from "./src/Routes/verificationRoutes";
+import authRoutes from "./Routes/authroutes";
+import postRoutes from "./Routes/postRoutes";
+import friendsRoutes from "./Routes/friendsRoutes";
+import profileRoutes from "./Routes/profileRoutes";
+import verificationRoutes from "./Routes/verificationRoutes";
 import { swaggerDocs, swaggerUi } from "./swagger";
-import { connect } from "./src/database/database";
-import { errorHandler, notFound } from "./src/middleware/errorMiddleware";
+import { connect } from "./database/database";
+import { errorHandler, notFound } from "./middleware/errorMiddleware";
 
 dotenv.config();
 
@@ -38,9 +38,9 @@ const io = new Server(server);
 
 //allows cross origin resource sharing CORS-
 const corsOptions = {
-    origin: '*', // Allow all origins
-    methods: 'GET,POST,PUT,DELETE', // Allow specific methods
-    allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
+	origin: "*", // Allow all origins
+	methods: "GET,POST,PUT,DELETE", // Allow specific methods
+	allowedHeaders: ["Content-Type", "Authorization"], // Allow specific headers
 };
 
 app.use(cors(corsOptions));

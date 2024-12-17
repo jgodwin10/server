@@ -23,7 +23,7 @@
 		"resolveFullPaths": true,
 		"verbose": false
 	},
-	"include": ["./", "package.json", "index.ts", "swagger.ts"],
+	"include": ["./", "package.json", "src/index.ts", "src/swagger.ts"],
 	"exclude": ["node_modules"]
 }
 
