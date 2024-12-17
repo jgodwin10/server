@@ -6,7 +6,7 @@
 	"scripts": {
 		"type-check": "tsc",
 		"build": "rimraf dist && tsc --noEmit false && tsc-alias && cp package.json ./dist",
-		"start": "node src/index.ts",
+		"start": "cd src && sleep 1 && ls && tsx watch index",
 		"dev": "tsx watch index",
 		"test": "jest",
 		"docker": "docker compose up --watch",
