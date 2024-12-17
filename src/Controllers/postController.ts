@@ -2,7 +2,7 @@ import { uploadToCloudinary } from "@/database/Cloudinary";
 import { PostModel } from "@/models/Posts/posts.models";
 import { UserModel } from "@/models/Users/users.models";
 import fs from "fs";
-import * as tf from "@tensorflow/tfjs";
+import * as tf from "@tensorflow/tfjs-node";
 import { NextFunction, Request, Response } from "express";
 import { Server } from "socket.io";
 import { loadModel, prepareData, rankTweets, saveModel, trainModel } from "@/services/TensorFlow";

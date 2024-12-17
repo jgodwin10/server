@@ -1,4 +1,4 @@
-import * as tf from "@tensorflow/tfjs";
+import * as tf from "@tensorflow/tfjs-node";
 import fs from "fs";
 import { IPost } from "@/models/Posts/posts.types";
 
